@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shaheed Captain Vikram Batra Training Institute - Computer courses and English speaking programmes.">
+<title>Shaheed Captain Vikram Batra Training Institute</title>
+<style>
+:root{--navy:#10264a;--blue:#1769d2;--cyan:#20c5c8;--white:#fff;--text:#17243a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#eef4fb}
+.banner{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:clamp(22px,5vw,64px);background:linear-gradient(110deg,rgba(5,18,40,.94),rgba(8,48,91,.82) 55%,rgba(4,91,111,.68)),url('https://static.wixstatic.com/media/457669_5d3a696fb13e4b75a6c43927bb48709d~mv2.jpg/v1/fill/w_1000%2Ch_540%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_auto/457669_5d3a696fb13e4b75a6c43927bb48709d~mv2.jpg') center/cover no-repeat,linear-gradient(135deg,#091a35 0%,#123d75 58%,#087f91 100%);position:relative;overflow:hidden}
+.banner:before,.banner:after{content:"";position:absolute;border:1px solid #ffffff20;border-radius:50%;pointer-events:none}
+.banner:before{width:min(70vw,760px);height:min(70vw,760px);right:-18%;top:-35%}
+.banner:after{width:min(48vw,520px);height:min(48vw,520px);left:-18%;bottom:-28%}
+.content{position:relative;z-index:1;width:min(100%,1000px);text-align:center;color:var(--white)}
+.logo{width:76px;height:76px;margin:0 auto 22px;border-radius:22px;background:linear-gradient(135deg,#fff,#cceeff);color:#123b70;display:grid;place-items:center;font-weight:900;font-size:1.55rem;box-shadow:0 12px 35px #0003}
+.tag{display:inline-block;padding:8px 15px;border:1px solid #ffffff55;border-radius:99px;background:#ffffff12;font-size:clamp(.7rem,1.5vw,.9rem);font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+h1{font-size:clamp(2rem,5.6vw,4.8rem);line-height:1.08;letter-spacing:-.035em;margin:22px auto 14px;max-width:950px}
+.subtitle{font-size:clamp(1rem,2vw,1.3rem);line-height:1.6;color:#dcecff;max-width:760px;margin:0 auto}
+.actions{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin:38px auto 0}
+.action{min-width:210px;min-height:54px;border:0;border-radius:12px;padding:15px 24px;font-size:1rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;transition:transform .18s,box-shadow .18s}
+.action:hover{transform:translateY(-2px);box-shadow:0 12px 25px #0003}
+.courses-button{background:#fff;color:#123d75}
+.admission-button{background:linear-gradient(135deg,#22d0c5,#18a8b5);color:#062d43}
+.dropdown-wrap{width:min(100%,680px);margin:18px auto 0;text-align:left}
+.dropdown{display:none;background:#fff;color:var(--text);border-radius:16px;padding:clamp(15px,3vw,24px);box-shadow:0 20px 50px #00142d55;max-height:min(55vh,540px);overflow:auto}
+.dropdown.open{display:block;animation:appear .18s ease-out}
+.dropdown h2{font-size:1.15rem;color:#123d75;margin:0 0 15px}
+.course-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.course{background:#f1f6fc;border:1px solid #e1eaf5;border-radius:9px;padding:10px 12px;font-size:.92rem;line-height:1.35}
+.course b{color:#1769d2;margin-right:6px;font-size:.8rem}
+.hint{font-size:.88rem;color:#dcecff;margin-top:28px}
+footer{background:#08172e;color:#c8d8eb;text-align:center;padding:16px;font-size:.85rem}
+@keyframes appear{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.banner{min-height:100svh;padding:28px 17px}.logo{width:62px;height:62px;border-radius:18px;font-size:1.3rem}.actions{gap:11px;margin-top:28px}.action{width:100%;min-width:0;max-width:360px}.course-list{grid-template-columns:1fr}.dropdown{max-height:48vh}.hint{margin-top:20px}}
+@media(min-width:1500px){.content{max-width:1200px}h1{font-size:5.2rem}.subtitle{font-size:1.45rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="banner">
+  <div class="content">
+    <div class="logo" aria-hidden="true">SVB</div>
+    <div class="tag">Learn · Practise · Succeed</div>
+    <h1>Shaheed Captain Vikram Batra Training Institute</h1>
+    <p class="subtitle">Computer Education &amp; English Speaking Institute<br>Build your skills. Boost your confidence. Shape your future.</p>
+
+    <div class="actions">
+      <button class="action courses-button" id="coursesToggle" type="button" aria-expanded="false" aria-controls="coursesDropdown">
+        Courses Name <span aria-hidden="true">⌄</span>
+      </button>
+      <a class="action admission-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdo_Eo7TPUZvlecFKjioEgOwSj1mpZ9Iy7bquLrYCpSxeNElQ/viewform?usp=sharing&amp;ouid=114523949351876124364" target="_blank" rel="noopener noreferrer">
+        Admission Link <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div class="dropdown-wrap">
+      <section class="dropdown" id="coursesDropdown" aria-label="All available courses">
+        <h2>All Courses (30)</h2>
+        <div class="course-list">
+          <div class="course"><b>01.</b> Advance Diploma in Information Technology (ADIT)</div>
+          <div class="course"><b>02.</b> Advance in Computer Software (AICS)</div>
+          <div class="course"><b>03.</b> Certificate in Web Designing (CWD)</div>
+          <div class="course"><b>04.</b> Advance Computer Financial Accounting (ACFA)</div>
+          <div class="course"><b>05.</b> Advance Diploma with Office Management (ADOM)</div>
+          <div class="course"><b>06.</b> Advance Web Designing Diploma (AWDD)</div>
+          <div class="course"><b>07.</b> Advance Diploma in Computer Application (ADCA)</div>
+          <div class="course"><b>08.</b> Data Entry Operator (DEO)</div>
+          <div class="course"><b>09.</b> Course of Computer Concepts (CCC)</div>
+          <div class="course"><b>10.</b> Certificate in Computer Software (CCS)</div>
+          <div class="course"><b>11.</b> Diploma in Application Software Development (DASD)</div>
+          <div class="course"><b>12.</b> Diploma in Graphic Designing (DGD)</div>
+          <div class="course"><b>13.</b> Advance Diploma in Computer (ADC)</div>
+          <div class="course"><b>14.</b> Computer Teacher Training (CTT)</div>
+          <div class="course"><b>15.</b> Desktop Publishing (DTP)</div>
+          <div class="course"><b>16.</b> Video Editing</div>
+          <div class="course"><b>17.</b> Web Designing (WDD)</div>
+          <div class="course"><b>18.</b> Data Analytics</div>
+          <div class="course"><b>19.</b> Artificial Intelligence (AI)</div>
+          <div class="course"><b>20.</b> Python Programming</div>
+          <div class="course"><b>21.</b> Advance Excel</div>
+          <div class="course"><b>22.</b> Power BI</div>
+          <div class="course"><b>23.</b> MS SQL</div>
+          <div class="course"><b>24.</b> English Typing</div>
+          <div class="course"><b>25.</b> Hindi Typing</div>
+          <div class="course"><b>26.</b> Tally ERP / Busy / Tally Prime</div>
+          <div class="course"><b>27.</b> Java</div>
+          <div class="course"><b>28.</b> English Speaking (Basic)</div>
+          <div class="course"><b>29.</b> English Speaking (Advance)</div>
+          <div class="course"><b>30.</b> English Speaking (Basic to Advance)</div>
+        </div>
+      </section>
+    </div>
+    <p class="hint">Admissions open · Click “Courses Name” to view all programmes</p>
+  </div>
+</main>
+<footer>© <span id="year"></span> Shaheed Captain Vikram Batra Training Institute · <a href="https://www.brilliantguide.net/" target="_blank" rel="noopener noreferrer" style="color:#c8d8eb;text-decoration:underline">Banner photo source</a></footer>
+<script>
+const toggle=document.getElementById('coursesToggle');
+const dropdown=document.getElementById('coursesDropdown');
+toggle.addEventListener('click',()=>{
+  const isOpen=dropdown.classList.toggle('open');
+  toggle.setAttribute('aria-expanded',String(isOpen));
+  toggle.querySelector('span').textContent=isOpen?'⌃':'⌄';
+});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
